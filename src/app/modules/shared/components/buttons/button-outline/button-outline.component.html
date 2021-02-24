@@ -1,0 +1,3 @@
+<button [ngClass]="{'btn-outline-primary': buttonDetails.color == 1, 'btn-outline-danger': buttonDetails.color == 2, 'btn-outline-info': buttonDetails.color == 3, 'btn-outline-success': buttonDetails.color == 4, 'btn-outline-warning': buttonDetails.color == 5, 'btn-outline-secondary': buttonDetails.color == 6 }" [attr.type]="buttonDetails.type || 'button'" class="btn form-control {{buttonDetails?.customStyle}}">
+  {{buttonDetails.text}}
+</button>

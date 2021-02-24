@@ -1,0 +1,7 @@
+<label *ngIf="inputDetails.hasLabel" [attr.for]="inputDetails.name" class="form-label">{{inputDetails.labelName}}</label>
+<div class="input-group ">
+  <input [ngClass]="{ 'border-end-0' : inputDetails.isInputGroup }" [attr.autocomplete]="inputDetails.autocomplete" [attr.inputmode]="inputDetails.inputMode" [id]="inputDetails.name" [attr.placeholder]="inputDetails.placeholder" [attr.required]="inputDetails.required" [attr.type]="inputDetails.type" [attr.max]="inputDetails.maxLength" [attr.min]="inputDetails.minLength" [attr.maxlength]="inputDetails.maxLength" [attr.minlength]="inputDetails.minLength" [attr.pattern]="inputDetails.regexPattern" [(ngModel)]="inputDetails.value" class="form-control p-3 bg-blend">
+  <span *ngIf="inputDetails.isInputGroup" (click)="inputGroupAction()" class="input-group-text cursor-pointer border-start-0 bg-blend" id="basic-addon2"> {{inputDetails.inputGroupText}} </span>
+</div>
+
+

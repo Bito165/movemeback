@@ -1,0 +1,19 @@
+.form-control{
+  font-size: 1.25rem !important;
+  border-radius: 8px !important;
+  color: #2E4369 !important ;
+}
+
+.bg-blend{
+  background-color: #E3EAF8 !important;
+}
+
+.border-end-0{
+  border-top-right-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+}
+
+.input-group-text{
+  border-top-right-radius: 8px !important;
+  border-bottom-right-radius: 8px !important;
+}

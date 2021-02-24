@@ -1,0 +1,73 @@
+.rounded{
+  border-radius: 8px !important;
+}
+
+.mat-table{
+  box-shadow: none !important;
+  background-color: #FFFFFF !important;
+}
+
+tr.mat-header-row{
+  border-radius: 8px !important;
+  background-color: #FFFFFF !important;
+  color: #19304D !important;
+  opacity: 0.7 !important;
+}
+
+th.mat-header-cell {
+  font-size: 12px !important;
+  font-weight: 700 !important;
+  font-stretch: normal !important;
+  font-style: normal !important;
+  line-height: 1.38 !important;
+  letter-spacing: normal !important;
+  color: #000000 !important;
+  opacity: 1 !important;
+  border: 0;
+  text-align: center !important;
+}
+
+tr.mat-row{
+  cursor: pointer;
+  border-radius: 10px !important;
+  text-align: center !important;
+}
+
+.mat-row:nth-child(odd){
+  background-color: #F6F7FA !important;
+}
+
+.mat-row:nth-child(even){
+  background-color: #FFFFFF !important;
+}
+
+td.mat-cell:first-of-type, td.mat-footer-cell:first-of-type, th.mat-header-cell:first-of-type {
+  padding-left: 0.5rem !important;
+}
+
+td.mat-cell,
+td.mat-footer-cell {
+  padding: 1rem 0.6rem !important;
+  border: 0 !important;
+}
+
+th.mat-header-cell {
+  padding-left: 0.6rem !important;
+  padding-right: 0.6rem !important;
+}
+
+tr.mat-row:hover{
+  box-shadow: 10px 0 20px rgba(136, 147, 165, 0.14) !important;
+  border-left: 2px solid #2E4369 !important;
+}
+
+.mat-paginator{
+  background-color: #FFFFFF !important;
+}
+
+.mat-cell{
+  font-size: 12px !important;
+  font-weight: 400 !important;
+}
+
+

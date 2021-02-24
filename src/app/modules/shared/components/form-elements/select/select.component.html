@@ -1,0 +1,4 @@
+<label *ngIf="selectDetails.hasLabel" [attr.for]="selectDetails.name" class="form-label">{{selectDetails.labelName}}</label>
+<select [name]="selectDetails.name" class="form-select form-control p-3" [attr.aria-label]="selectDetails.name">
+  <option *ngFor="let option of selectDetails.options" [value]="option.value"> {{option.name}} </option>
+</select>

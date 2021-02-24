@@ -1,0 +1,6 @@
+<label class="form-label">Attachment</label> <br>
+<button type="button" (click)="fileInput.click()" class="btn btn-primary p-3 form-control text-start">
+  <i class="fa fa-paperclip mx-2"></i>
+  {{fileInputDetails.text}}
+</button>
+<input type="file" #fileInput hidden [attr.multiple]="fileInputDetails.multiple">

@@ -1,0 +1,32 @@
+<form #defaultForm="ngForm" (submit)="submitForm(defaultForm)" ngNativeValidate>
+  <div class="form-group" *ngFor="let field of formFields">
+    <label *ngIf="field.hasLabel" [attr.for]="field.name" class="form-label mb-0">{{field.labelName}}</label>
+    <div [ngSwitch]="field.type">
+
+      <div *ngSwitchCase="'text'" class="input-group my-2">
+        <input [ngClass]="{ 'border-end-0' : field.isInputGroup }" [attr.autocomplete]="field.autocomplete" [attr.inputmode]="field.inputMode" [id]="field.name" [attr.placeholder]="field.placeholder" [attr.required]="field.required" [attr.type]="field.type" [attr.max]="field.maxLength" [attr.min]="field.minLength" [attr.maxlength]="field.maxLength" [attr.minlength]="field.minLength" [attr.pattern]="field.regexPattern" [name]="field.name" [(ngModel)]="field.value" class="form-control p-3 bg-blend">
+        <span *ngIf="field.isInputGroup" (click)="inputGroupAction(field)" class="input-group-text cursor-pointer border-start-0 bg-blend" id="basic-addon2"> {{field.inputGroupText}} </span>
+      </div>
+
+      <div *ngSwitchCase="'password'" class="input-group my-2">
+        <input [ngClass]="{ 'border-end-0' : field.isInputGroup }" [attr.autocomplete]="field.autocomplete" [attr.inputmode]="field.inputMode" [id]="field.name" [attr.placeholder]="field.placeholder" [attr.required]="field.required" [attr.type]="field.type" [attr.max]="field.maxLength" [attr.min]="field.minLength" [attr.maxlength]="field.maxLength" [attr.minlength]="field.minLength" [attr.pattern]="field.regexPattern" [name]="field.name" [(ngModel)]="field.value" class="form-control p-3 bg-blend">
+        <span *ngIf="field.isInputGroup" (click)="inputGroupAction(field)" class="input-group-text cursor-pointer border-start-0 bg-blend" id="basic-addon3"> {{field.inputGroupText}} </span>
+      </div>
+
+      <div *ngSwitchCase="'email'" class="input-group my-2">
+        <input [ngClass]="{ 'border-end-0' : field.isInputGroup }" [attr.autocomplete]="field.autocomplete" [attr.inputmode]="field.inputMode" [id]="field.name" [attr.placeholder]="field.placeholder" [attr.required]="field.required" [attr.type]="field.type" [attr.max]="field.maxLength" [attr.min]="field.minLength" [attr.maxlength]="field.maxLength" [attr.minlength]="field.minLength" [attr.pattern]="field.regexPattern" [name]="field.name" [(ngModel)]="field.value" class="form-control p-3 bg-blend">
+        <span *ngIf="field.isInputGroup" (click)="inputGroupAction(field)" class="input-group-text cursor-pointer border-start-0 bg-blend" id="basic-addon4"> {{field.inputGroupText}} </span>
+      </div>
+
+<!--      <span class="text-danger" *ngIf="defaultForm.getControl(field).dirty || defaultForm.getControl(field.name).invalid || defaultForm.getControl(field.name).touched"> {{field.name}} is required </span>-->
+<!--      <span class="text-danger" *ngIf="defaultForm.getControl(field).hasError('minLength') && defaultForm.getControl(field.name).dirty "> {{field.name}} has a minimum length of {{field.minLength}} </span>-->
+
+    </div>
+  </div>
+  <div class="form-group mt-3">
+    <div class="col-md-4 offset-4">
+      <app-button-solid [buttonDetails]="buttonDetails"></app-button-solid>
+    </div>
+  </div>
+
+</form>

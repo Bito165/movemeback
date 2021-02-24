@@ -5,12 +5,10 @@ import {  } from 'events';
   providedIn: 'root'
 })
 export class NotificationsService {
-  message :string = '';
-  notification:EventEmitter<any> = new EventEmitter<any>()
+  message!: string;
   constructor() { }
-
-
-  alertStatus: BehaviorSubject<{content:string, style:string, type:number, show:boolean}> = new BehaviorSubject<{content:string, style:string, type:number, show:boolean}>({content:'testing', style:'info', type:0, show:false})
+  // tslint:disable-next-line:max-line-length
+  alertStatus: BehaviorSubject<{content: string, style: string, type: number, show: boolean}> = new BehaviorSubject<{content:string, style:string, type:number, show:boolean}>({content:'testing', style:'info', type:0, show:false})
 
   publishMessages(content: string, style: string, type:number) {
     this.alertStatus.next({ content: content, style: style, type: 0, show: true });

@@ -1,4 +1,20 @@
 /* You can add global styles to this file, and also import other style files */
 
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; background-color: #d8e2e9;}
+
+.mt-n1{
+    margin-top: -1.5rem !important;
+}
+
+.mt-n2{
+    margin-top: -2rem !important;
+}
+
+.rounded{
+    border-radius: 8px !important;
+}
+
+.cursor-pointer{
+  cursor: pointer;
+}

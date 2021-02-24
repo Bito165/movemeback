@@ -1,0 +1,12 @@
+<div class="row">
+
+  <p class="text-start">
+    <b> 1. Personal Information </b> <br>
+    <span class="text-muted"> Welcome to Movemeback, please provide the following </span>
+  </p>
+
+  <div class="col-md-12 my-0">
+    <app-form [formFields]="personalInformationFields" [buttonDetails]="buttonDetails" (form)="submitPersonalInformation($event)"></app-form>
+  </div>
+
+</div>

@@ -1,1 +1,24 @@
-<p>auth works!</p>
+<main>
+    <div class="row">
+      <div class="col-md-6 offset-md-3">
+        <div class="login my-5">
+            <div class="card bg-transparent border-0 text-center py-5 px-3">
+                <div class="card-header rounded">
+                    <i class="fa fa-user fa-5x p-2 bg-light text-primary rounded-circle position-icon-fix"></i>
+                    <h1 class="mt-n2"> Movemeback </h1>
+                    <h3 class="text-muted mb-0"> {{subCaption}} </h3>
+                    <span *ngIf="!isLogin" class="position-checklist-fix">
+                        <i [ngClass]="{'bg-success': stage >= 1, 'bg-light text-dark': stage < 1}" class="fa fa-check fa-2x rounded-circle  p-1"></i>
+                        <i [ngClass]="{'bg-success': stage >= 2, 'bg-light text-dark': stage < 2}" class="fa fa-check fa-2x rounded-circle  p-1 mx-4"></i>
+                    </span>
+                </div>
+                <div class="card-body rounded shadow">
+                    <div class="row my-3">
+                        <router-outlet></router-outlet>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </main>

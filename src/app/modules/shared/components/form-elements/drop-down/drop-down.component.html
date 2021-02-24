@@ -1,0 +1,9 @@
+<div class="dropdown">
+    <a class="btn btn-light shadow-sm dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+        {{dropDownDetails.title | titlecase}} <span *ngIf="selectedOption">:</span><b>{{selectedOption?.text | uppercase}}</b>
+    </a>
+    
+    <ul class="dropdown-menu w-100 my-2 border-0 p-3 rounded" aria-labelledby="dropdownMenuLink">
+        <li *ngFor="let option of dropDownDetails.options"><a *ngIf="option" class="dropdown-item" [href]="option.value">{{option.text | titlecase}} ({{option.value|uppercase}})</a></li>
+    </ul>
+</div>

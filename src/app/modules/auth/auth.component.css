@@ -1,0 +1,33 @@
+.card-header{
+    background-color: #113c5a;
+    color: #ffffff;
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+}
+
+.text-primary{
+    height: 6.25rem;
+    width: 6.25rem;
+    color: #113c5a !important;
+}
+
+.position-icon-fix{
+    position: relative !important;
+    top: -4rem !important;
+}
+
+.position-checklist-fix{
+    position: relative !important;
+    bottom: -1.5rem !important;
+}
+
+.rounded-icon{
+    height: 2rem;
+    width: 2rem;
+}
+
+.card-body{
+    background-color: #ffffff;
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+}

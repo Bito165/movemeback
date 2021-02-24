@@ -1,1 +1,13 @@
-<p>login works!</p>
+
+
+
+<div class="text-start">
+  <div class="row">
+    <div class="col-lg-8 offset-lg-2 my-4">
+      <app-form [formFields]="inputFields" [buttonDetails]="buttonDetails" (form)="loginUser($event)"></app-form>
+    </div>
+    <div class="col-lg-4 offset-lg-4 text-end">
+      <div routerLink="/account-setup" class="text-center my-2 cursor-pointer"> Create A New Account </div>
+    </div>
+  </div>
+</div>
